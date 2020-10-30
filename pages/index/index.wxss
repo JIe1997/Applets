@@ -1,0 +1,9 @@
+/* pages/index/index.wxss */
+
+navigator{
+  padding: 20rpx 32rpx;
+  box-sizing: border-box;
+  line-height: 1.8;
+  border-bottom: 2rpx solid #eee;
+  font-size: 30rpx;
+}

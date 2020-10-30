@@ -1,0 +1,11 @@
+<!--pages/index/index.wxml-->
+<view class="border-line-top"></view>
+<navigator
+  class="page-container bg-white mt-40 box-shadow border-radius-10 font-size-30"
+  hover-class="none"
+  wx:for="{{list}}"
+  wx:key="id"
+  url="/pages/article/index?id={{item.id}}"
+  >
+  {{item.title}}
+</navigator>
