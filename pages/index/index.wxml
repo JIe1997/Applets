@@ -7,5 +7,5 @@
   wx:key="id"
   url="/pages/article/index?id={{item.id}}"
   >
-  {{item.title}}
+  {{item.description}}
 </navigator>

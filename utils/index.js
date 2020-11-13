@@ -5,7 +5,7 @@ const request = (method, url, data) => {
     })
     wx.request({
       method,
-      url: 'http://jsonplaceholder.typicode.com'+ url,
+      url: 'http://localhost:3000'+ url,
       data,
       success(res) {
         resolve(res.data)
@@ -42,6 +42,12 @@ export const $tips = (tips) => {
   })
 }
 
+export function $sd(key, val) {
+  this.setData({
+    [key]: val
+  })
+}
+
 
 /**
  * 统一页面对象，封装了Page，添加了自定义方法
@@ -52,7 +58,9 @@ export default function Router(option) {
   option.$get = $get
   option.$post = $post
   option.$d = $d
+  option.$sd = $sd
   option.$tips = $tips
+
 
   Page(option)
 }

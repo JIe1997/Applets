@@ -13,11 +13,11 @@ Router({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function ({id}) {
+  onLoad({id}) {
     this.getInfo(id)
   },
   async getInfo(id) {
-    const data = await this.$get('/posts/'+ id)
+    const { data } = await this.$get('/getDetail', {id})
     this.setData({
       info: data
     })

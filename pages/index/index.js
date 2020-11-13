@@ -11,18 +11,19 @@ Router({
   },
 
   async getList() {
-    const data = await this.$get('/posts', {
-      _page: this.data.currentPage,
-      _limit: this.data.pageSize
+    const { list } = await this.$get('/getList', {
+      page: this.data.currentPage,
+      limit: this.data.pageSize
     })
-    if (data && data.length) {
+    console.log(list)
+    if (list && list.length) {
       if(this.data.currentPage === 1) {
         this.setData({
-          list: data
+          list
         })
       } else {
         this.setData({
-          list: this.data.list.concat(data)
+          list: this.data.list.concat(list)
         })
       }
       this.setData({
