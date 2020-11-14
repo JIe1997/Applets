@@ -650,6 +650,9 @@ image{
 .text-red{
   color: #f00;
 }
+.text-43{
+  color: #434343;
+}
 .text-3{
   color: #333;
 }
@@ -706,7 +709,9 @@ image{
 .bg-primary{
   background-color: #0089ff;
 }
-
+.bg-gray{
+  background-color: #f2f3f5;
+}
 /* border-radius */
 .border-radius-50{
   border-radius: 50%;
