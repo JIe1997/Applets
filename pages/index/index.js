@@ -15,7 +15,7 @@ Router({
       page: this.data.currentPage,
       limit: this.data.pageSize
     })
-    console.log(list)
+    // console.log(list)
     if (list && list.length) {
       if(this.data.currentPage === 1) {
         this.setData({

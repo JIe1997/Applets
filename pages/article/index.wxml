@@ -1,5 +1,5 @@
 <!--pages/article/index.wxml-->
-<view class="page-container mt-30 bg-white padding-primary box-border">
-  <view class="font-size-30 pb-20 text-weight-bold">{{info.title}}</view>
+<view class="page-container mt-30 mb-30 bg-white padding-primary box-border">
+  <view class="font-size-30 pb-20 text-weight-bold text-center">{{info.title}}</view>
   <view>{{info.word}}</view>
 </view>
